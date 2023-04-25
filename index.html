@@ -4,54 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flex box</title>
+    <title>Document</title>
     <style>
         * {
             padding: 0;
             margin: 0;
+            box-sizing: border-box;
         }
-        header {
+        .titulo {
             background-color: darkcyan;
-            padding: 1px; 
+            padding: 10px;
+            
         }
 
-        img {
-            width: 40px;
-           margin: 5px;
-           display: block;
+        .menu ul{
+            display: flex;
+            justify-content: space-between;
+
         }
 
-        .nave {
-            position: absolute;
-            display: none;
+        ul li {
+            list-style: none;
         }
 
-        header:hover > .nave {
-            display: block;
+       ul a {
+            text-decoration: none;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
-
-        .link{
-            display: block;
-            background-color: aqua;
-            padding: 0 19px;
-           
-        }
-
-
-
-        
     </style>
 </head>
 <body>
-      <header>
-            <a href="#"><img src="./imagens/casa.png" alt=""></a>
-            <div class="nave">
-                <a class="link" class="" href="">Home</a>
-                <a class="link" class="" href="">Contato</a>
-                <a class="link" class="" href="">Ajuda</a>
-                <a class="link" class="" href="">Dicas</a>
-                
-            </div>
-      </header>
+    <header class="titulo">
+        <div class="menu">
+            <ul>
+                <a href="">
+                    <li>Home</li>
+                </a>
+                <a href="">
+                    <li>Contato</li>
+                </a>
+                <a href="">
+                    <li>Noticias</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+    <main>
+
+    </main>
 </body>
 </html>
